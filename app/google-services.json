@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "793086997063",
+    "firebase_url": "https://plookpuks.firebaseio.com",
+    "project_id": "plookpuks",
+    "storage_bucket": "plookpuks.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:793086997063:android:d35262bf369f8d66",
+        "android_client_info": {
+          "package_name": "com.example.plookpuks"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "793086997063-j335svv9sp0qlkqhsvqkm35n12rv0ood.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.plookpuks",
+            "certificate_hash": "cb0c284c0bdc38a069c7bc02c2f0d89649178b41"
+          }
+        },
+        {
+          "client_id": "793086997063-35qlutaq1a464qcug839albq8r2j2l40.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqNnQw2rL2Y6iS5zP1HlFLpuKcMw9TOyQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "793086997063-35qlutaq1a464qcug839albq8r2j2l40.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
