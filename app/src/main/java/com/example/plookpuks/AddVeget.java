@@ -47,7 +47,7 @@ public class AddVeget extends AppCompatActivity {
 
         acept = (Button) findViewById(R.id.aceptbutton);
         nameMake = (EditText) findViewById(R.id.editMake);
-        listView = (ListView) findViewById(R.id.listview);
+//        listView = (ListView) findViewById(R.id.listview);
        /* list();
         nameMake.addTextChangedListener(new TextWatcher() {
             @Override
