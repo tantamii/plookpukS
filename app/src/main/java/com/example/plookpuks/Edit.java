@@ -2,8 +2,10 @@ package com.example.plookpuks;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.RecyclerView;
 
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -34,8 +36,11 @@ public class Edit extends AppCompatActivity {
     private Button  choose;
     ArrayList<String> myArrayList = new ArrayList<>();
     ListView myListView;
+    private Activity root;
+    RecyclerView recyclerView = root.findViewById(R.id.recyclerview);
 
-   // FirebaseFirestore db = FirebaseFirestore.getInstance();
+
+    // FirebaseFirestore db = FirebaseFirestore.getInstance();
    FirebaseFirestore db = FirebaseFirestore.getInstance();
 
 

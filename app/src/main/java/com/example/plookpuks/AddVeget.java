@@ -31,7 +31,7 @@ public class AddVeget extends AppCompatActivity {
     private String add;
     private EditText nameMake;
     FirebaseFirestore db = FirebaseFirestore.getInstance();
-    private FirebaseDatabase database ;
+    private FirebaseDatabase database;
     private FirebaseAuth firebaseAuth;
     private String[] items;
     private ArrayList<String> listItem;
@@ -40,16 +40,15 @@ public class AddVeget extends AppCompatActivity {
     private ListView editText;
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.add_vegetable);
 
         acept = (Button) findViewById(R.id.aceptbutton);
-        nameMake = (EditText)  findViewById(R.id.editMake);
-        listView=(ListView)findViewById(R.id.listview);
-        list();
+        nameMake = (EditText) findViewById(R.id.editMake);
+        listView = (ListView) findViewById(R.id.listview);
+       /* list();
         nameMake.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
@@ -77,7 +76,11 @@ public class AddVeget extends AppCompatActivity {
         {
             for(String item:items)
             {
-                if(!item.contains())
+                if(!item.contains(textTosearch))
+                {
+                    l
+                }
+
             }
         }
 
@@ -130,20 +133,6 @@ db.collection("users")
                 Log.w(TAG, "Error adding document", e);
             }
         });*/
-
-    void ClickAcepts ()
-    {
-        Intent make = new Intent(AddVeget.this,Home.class);
-        add = nameMake.getText().toString();
-        Map<String, Object> farms = new HashMap<>();
-        farms.put("name", add);
-
-
-        db.collection("farms").add(farms);
-        Toast.makeText(this,"เพิ่มผักของคูรเรียบร้อยแบล้ว",Toast.LENGTH_LONG).show();
-
-        //databaseReference.child(user.getUid()).child("name"+).setValue(makeName);
-
-        startActivity(make);
     }
 }
+
